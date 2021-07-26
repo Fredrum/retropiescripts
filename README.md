@@ -13,3 +13,6 @@ sudo nano /etc/systemd/system/bluetooth.target.wants/bluetooth.service
 sudo systemctl daemon-reload
 systemctl restart bluetooth
 NOW BROKEN
+sudo nano /etc/systemd/system/bluetooth.target.wants/bluetooth.service
+sudo systemctl daemon-reload
+systemctl restart bluetooth
