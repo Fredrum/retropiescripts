@@ -20,3 +20,6 @@ WORKS
 --plugin=a2dp
 sudo systemctl daemon-reload
 systemctl restart bluetooth
+BREAKS
+--noplugin=sap 
+WORKS when not also using --plugin=a2dp
