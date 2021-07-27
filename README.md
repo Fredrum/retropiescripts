@@ -22,4 +22,14 @@ sudo systemctl daemon-reload
 systemctl restart bluetooth
 BREAKS
 --noplugin=sap 
-WORKS when not also using --plugin=a2dp
+WORKS when NOT also using --plugin=a2dp
+
+BUT
+
+Keeping only
+ExecStart=/usr/lib/bluetooth/bluetoothd --noplugin=sap
+then manually in a shell doing
+kill bluetoothd
+sudo bluetoothd -P sap -n
+Actually got both DS4 and AirPods to connect.  (They were already registered and paired)
+
