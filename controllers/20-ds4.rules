@@ -1,0 +1,1 @@
+SUBSYSTEM=="input", ACTION=="add", ATTRS{name}=="Wireless Controller", RUN+="/bin/bash /home/pi/RetroPie/myscripts/ds4LedColor.sh"
